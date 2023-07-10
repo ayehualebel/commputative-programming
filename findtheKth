@@ -1,0 +1,10 @@
+class Solution(object):
+    def kthLargestNumber(self, nums, k):
+        self.nums=nums
+        self.k=k
+        n_ums=[]
+        for num in nums:
+            n_ums.append(int(num))
+        n_ums.sort()
+        return str(n_ums[-k])
+
